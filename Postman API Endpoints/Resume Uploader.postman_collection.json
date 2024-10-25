@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "eddff845-bfdd-4656-9704-2a4d4cb3af7e",
+		"name": "Resume Uploader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39222641"
+	},
+	"item": [
+		{
+			"name": "List Resume",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Bikalpa KC",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "bikalpa@example.com",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2024-10-24",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Gandaki",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Heaven",
+							"type": "text"
+						},
+						{
+							"key": "pimage",
+							"type": "file",
+							"src": "/C:/Users/Bikalpa/Downloads/pngegg (6).png"
+						},
+						{
+							"key": "rdoc",
+							"type": "file",
+							"src": "/C:/Users/Bikalpa/Desktop/Django Projects/Video Calling App/Video_calling_app/requirements.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resume/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resume",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
